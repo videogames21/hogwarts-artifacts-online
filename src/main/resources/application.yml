@@ -14,3 +14,6 @@ security:
       jwt:
         authorities-claim-name: authorities
         authority-prefix: ""
+
+server:
+  port: 80
