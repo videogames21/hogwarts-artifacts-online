@@ -1,0 +1,16 @@
+spring:
+  cloud:
+    azure:
+      keyvault:
+        secret:
+          properties[0]:
+            endpoint: ${AZURE_KEY_VAULT_ENDPOINT}
+  datasource:
+    url: ${datasource.url}
+    username: ${datasource.username}
+    password: ${datasource.password}
+  jpa:
+    hibernate:
+      ddl-auto: none
+
+

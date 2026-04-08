@@ -5,6 +5,7 @@ import edu.tcu.cs.hogwarts_artifacts_online.wizard.dto.WizardDto;
 import org.hamcrest.Matchers;
 import org.mockito.Mockito;
 import org.springframework.boot.webmvc.test.autoconfigure.AutoConfigureMockMvc;
+import org.springframework.test.context.ActiveProfiles;
 import tools.jackson.databind.ObjectMapper;
 import edu.tcu.cs.hogwarts_artifacts_online.artifact.Artifact;
 import edu.tcu.cs.hogwarts_artifacts_online.system.StatusCode;
@@ -30,6 +31,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @SpringBootTest
 @AutoConfigureMockMvc(addFilters = false)
+@ActiveProfiles(value = "dev")
 public class WizardControllerTest {
 
         @Autowired
